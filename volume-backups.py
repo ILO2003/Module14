@@ -8,7 +8,7 @@ def create_snapshot():
     volumes = ec2_client.describe_volumes(
         Filters=[
             {
-                'Name': 'tag:env',
+                'Name': 'tag:Name',
                 'Values': ['prod']
             }
         ]
