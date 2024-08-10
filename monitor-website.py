@@ -63,7 +63,7 @@ def monitor_app():
                 restart_container()
                 break
 
-schedule.every(20).minutes.do(monitor_app())
+schedule.every(20).minutes.do(monitor_app)
 
 while True:
     schedule.run_pending()
